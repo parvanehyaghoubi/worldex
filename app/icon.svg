@@ -1,0 +1,44 @@
+<svg viewBox="0 0 680 680" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Terrava</title>
+  <desc>A globe icon for the Terrava project</desc>
+
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="340" cy="340" r="260"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .bg-ocean { fill: #2176ae; }
+    .bg-land { fill: #3a9e6f; }
+    .globe-border { stroke: #1a5fa8; }
+    .grid-line { stroke: #1a5fa8; }
+    @media (prefers-color-scheme: dark) {
+      .bg-ocean { fill: #1a3a5c; }
+      .bg-land { fill: #2d6a4f; }
+      .globe-border { stroke: #4a9eff; }
+      .grid-line { stroke: #4a9eff; }
+    }
+  </style>
+
+  <circle cx="340" cy="340" r="260" class="bg-ocean"/>
+
+  <g clip-path="url(#circleClip)">
+    <path d="M180 200 Q190 210 185 240 Q180 270 195 300 Q210 330 205 370 Q200 410 215 440 Q225 460 220 490 L200 500 Q185 470 180 440 Q170 400 175 360 Q165 320 160 280 Q155 240 165 210 Z" class="bg-land"/>
+    <path d="M215 180 Q240 170 250 190 Q260 210 245 230 Q230 245 215 240 Q200 230 205 210 Z" class="bg-land"/>
+    <path d="M370 150 Q400 145 420 160 Q435 175 430 200 Q425 220 410 225 Q395 230 380 220 Q365 210 368 190 Z" class="bg-land"/>
+    <path d="M375 240 Q400 235 420 250 Q440 270 445 310 Q450 350 440 390 Q430 430 415 460 Q400 490 385 500 Q370 510 360 495 Q350 480 355 450 Q360 420 355 390 Q350 360 360 330 Q365 300 360 270 Q358 255 365 245 Z" class="bg-land"/>
+    <path d="M440 140 Q480 130 520 145 Q555 160 570 185 Q580 210 565 235 Q545 255 510 260 Q475 265 450 250 Q430 235 435 210 Q438 185 435 160 Z" class="bg-land"/>
+    <path d="M510 270 Q540 265 560 280 Q575 295 570 320 Q560 345 535 355 Q510 360 495 345 Q480 330 490 310 Q498 290 505 278 Z" class="bg-land"/>
+    <path d="M490 430 Q520 420 545 435 Q565 450 560 475 Q550 500 525 508 Q500 515 480 500 Q462 485 468 465 Q474 445 485 437 Z" class="bg-land"/>
+  </g>
+
+  <line x1="80" y1="340" x2="600" y2="340" class="grid-line" stroke-width="1.5" stroke-opacity="0.3" clip-path="url(#circleClip)"/>
+  <line x1="80" y1="265" x2="600" y2="265" class="grid-line" stroke-width="1" stroke-opacity="0.2" clip-path="url(#circleClip)"/>
+  <line x1="80" y1="415" x2="600" y2="415" class="grid-line" stroke-width="1" stroke-opacity="0.2" clip-path="url(#circleClip)"/>
+  <ellipse cx="340" cy="340" rx="130" ry="260" fill="none" class="grid-line" stroke-width="1.5" stroke-opacity="0.25" clip-path="url(#circleClip)"/>
+  <ellipse cx="340" cy="340" rx="230" ry="260" fill="none" class="grid-line" stroke-width="1" stroke-opacity="0.2" clip-path="url(#circleClip)"/>
+
+  <circle cx="340" cy="340" r="260" fill="none" class="globe-border" stroke-width="10"/>
+  <ellipse cx="270" cy="240" rx="70" ry="45" fill="white" fill-opacity="0.08"/>
+</svg>
