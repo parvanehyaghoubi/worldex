@@ -24,8 +24,10 @@ export default function AboutPage() {
             country in the world.
           </p>
           <ul>
-            <li>All countries: <code>https://restcountries.com/v3.1/all</code></li>
-            <li>Single country: <code>https://restcountries.com/v3.1/alpha/[code]</code></li>
+            <li>All countries: <code>https://restcountries.com/
+                v3.1/all</code></li>
+            <li>Single country: <code>https://restcountries.com/
+                v3.1/alpha/[code]</code></li>
           </ul>
         </div>
 
