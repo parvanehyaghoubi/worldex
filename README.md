@@ -143,6 +143,11 @@ Server-compatible card showing flag, name, capital, region, population, and a "V
 MIT — feel free to use this as a reference or starting point for your own projects.
 
 
+## Contact
+For any inquiries, please contact:
+- parvaneh.yaghoubi77@gmail.com
+
+
 ## Links
 
 ### Parvaneh Yaghoubi
