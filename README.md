@@ -173,6 +173,12 @@ Centralizes all API calls. Handles:
     </a>
     </td>
       <td  align="center">
+        <h3>Detail</h3>
+    <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/Detail.png">
+    <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/Detail.png" height=200px>
+    </a>
+    </td>
+      <td  align="center">
     <h3>About</h3>
     <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/about.png">
     <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/about.png" height=200px>
