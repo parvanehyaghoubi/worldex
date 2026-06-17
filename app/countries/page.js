@@ -1,27 +1,40 @@
 import CountryCard from "@/components/CountryCard";
+import { getAllCountries } from "@/lib/api";
 
-// This page can be statically rendered and cached.
 export default async function CountriesPage() {
-  const res = await fetch("https://restcountries.com/v3.1/all?fields=name,flags,capital,region,population,cca3", {
-    cache: "force-cache",
-  });
+  let countries = [];
+  let error = null;
 
-  const countries = await res.json();
+  try {
+    countries = await getAllCountries();
+  } catch (e) {
+    error = e.message;
+  }
+
+  if (error) {
+    return (
+      <div className="countries-page">
+        <div className="page-header">
+          <h1>🌍 Explore Countries</h1>
+          <p>Could not load countries: {error}</p>
+        </div>
+      </div>
+    );
+  }
 
   const sorted = [...countries].sort((a, b) =>
-    a.name.common.localeCompare(b.name.common)
+    (a.names?.common ?? "").localeCompare(b.names?.common ?? "")
   );
 
   return (
     <div className="countries-page">
       <div className="page-header">
         <h1>🌍 Explore Countries</h1>
-        <p>Discover information about countries from around the world</p>
+        <p>Discover information about {sorted.length} countries from around the world</p>
       </div>
-
       <div className="country-grid">
-        {sorted.slice(0, 20).map((country) => (
-          <CountryCard key={country.cca3} country={country} />
+        {sorted.map((country) => (
+          <CountryCard key={country.uuid} country={country} />
         ))}
       </div>
     </div>
