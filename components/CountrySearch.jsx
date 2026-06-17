@@ -8,7 +8,7 @@ export default function CountrySearch({ countries }) {
 
   const filtered = query.trim()
     ? countries.filter((c) =>
-        c.name.common.toLowerCase().includes(query.toLowerCase())
+        c.names?.common?.toLowerCase().includes(query.toLowerCase())
       )
     : [];
 
@@ -22,11 +22,10 @@ export default function CountrySearch({ countries }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="search-input"
+          autoFocus
         />
         {query && (
-          <button className="clear-btn" onClick={() => setQuery("")}>
-            ✕
-          </button>
+          <button className="clear-btn" onClick={() => setQuery("")}>✕</button>
         )}
       </div>
 
@@ -41,10 +40,8 @@ export default function CountrySearch({ countries }) {
           <p>Start typing to search for a country</p>
           <div className="hint-examples">
             <span>Try:</span>
-            {["Afghanistan", "Japan", "Germany", "Brazil", "Canada"].map((s) => (
-              <button key={s} className="hint-chip" onClick={() => setQuery(s)}>
-                {s}
-              </button>
+            {["Japan", "Germany", "Brazil", "Canada", "Iran"].map((s) => (
+              <button key={s} className="hint-chip" onClick={() => setQuery(s)}>{s}</button>
             ))}
           </div>
         </div>
@@ -53,7 +50,7 @@ export default function CountrySearch({ countries }) {
       {filtered.length > 0 && (
         <div className="country-grid">
           {filtered.map((country) => (
-            <CountryCard key={country.cca3} country={country} />
+            <CountryCard key={country.uuid} country={country} />
           ))}
         </div>
       )}
