@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="about-card">
           <h2>🌐 API Used</h2>
           <p>
-            This project uses the <strong>REST Countries API</strong> (
+            This project uses the <strong>REST Countries API v5</strong> (
             <a href="https://restcountries.com" target="_blank" rel="noopener noreferrer">
               restcountries.com
             </a>
@@ -24,10 +24,8 @@ export default function AboutPage() {
             country in the world.
           </p>
           <ul>
-            <li>All countries: <code>https://restcountries.com/
-                v3.1/all</code></li>
-            <li>Single country: <code>https://restcountries.com/
-                v3.1/alpha/[code]</code></li>
+            <li>Base URL: <code>https://api.restcountries.com/
+                countries/v5</code></li>
           </ul>
         </div>
 
