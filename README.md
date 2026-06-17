@@ -3,6 +3,10 @@
 Worldex is a Next.js project that allows users to explore countries around the world.
 
 
+## Live Demo:
+https://worldex.vercel.app/
+
+
 ## Features
 
 - App Router
