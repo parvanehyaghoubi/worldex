@@ -156,26 +156,26 @@ Centralizes all API calls. Handles:
     <tr align="center">
     <td align="center">
     <h3>Home</h3>
-    <a href="https://github.com/Parvaneh-Yaghoubi/country-explorer/blob/main/public/home.png">
-    <img src="https://raw.githubusercontent.com/Parvaneh-Yaghoubi/country-explorer/main/public/home.png" height=200px>
+    <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/home.png">
+    <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/home.png" height=200px>
     </a>
 </td>
       <td align="center">
     <h3>Countries</h3>
-    <a href="https://github.com/Parvaneh-Yaghoubi/country-explorer/blob/main/public/countries.png">
-    <img src="https://raw.githubusercontent.com/Parvaneh-Yaghoubi/country-explorer/main/public/countries.png" height=200px>
+    <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/countries.png">
+    <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/countries.png" height=200px>
     </a>
 </td>
 <td  align="center">
     <h3>Search</h3>
-    <a href="https://github.com/Parvaneh-Yaghoubi/country-explorer/blob/main/public/search.png">
-    <img src="https://raw.githubusercontent.com/Parvaneh-Yaghoubi/country-explorer/main/public/search.png" height=200px>
+    <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/search.png">
+    <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/search.png" height=200px>
     </a>
     </td>
       <td  align="center">
     <h3>About</h3>
-    <a href="https://github.com/Parvaneh-Yaghoubi/country-explorer/blob/main/public/about.png">
-    <img src="https://raw.githubusercontent.com/Parvaneh-Yaghoubi/country-explorer/main/public/about.png" height=200px>
+    <a href="https://github.com/parvanehyaghoubi/worldex/blob/main/public/about.png">
+    <img src="https://raw.githubusercontent.com/parvanehyaghoubi/worldex/main/public/about.png" height=200px>
     </a>
     </td>
     <tr>
